@@ -26,7 +26,7 @@ mongoose.connect(dbConfig.url, {
 
 app.use(function (req, res, next) {
 
-    var allowedOrigins = ['http://localhost:4200', 'https://demo-webs.com', 'http://192.168.1.15', 'https://stansonrubber.com'];
+    var allowedOrigins = ['http://localhost:4200', 'https://demo-webs.com', 'http://192.168.1.15', 'https://stansonrubber.com','http://www.stansonrubber.com','https://ww.stansonrubber.com'];
     var origin = req.headers.origin;
     if (allowedOrigins.indexOf(origin) > -1) {
         res.setHeader('Access-Control-Allow-Origin', "*");
